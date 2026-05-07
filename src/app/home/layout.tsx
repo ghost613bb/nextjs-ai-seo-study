@@ -17,7 +17,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
       <h1>Home Layout</h1>
       <button onClick={handleClick}>Click {count} times</button>
       {children}
-      <Link href="/home/me" className="text-blue-500">Home Me</Link>
+      <Link href={{pathname: "/home/me", query: { name: "bytedance" }}} className="text-blue-500">Home Me</Link>
       <Link href="/home/me2" className="text-red-500">Home Me 2</Link>
     </div>
   );
